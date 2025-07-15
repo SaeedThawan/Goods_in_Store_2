@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواجد المنتجات لدى العملاء</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>تواجد المنتجات لدى العملاء</h1>
+
+        <div class="section">
+            <h2>القسم 1: معلومات الموظف</h2>
+            <label for="employeeName">اسم الموظف:</label>
+            <input type="text" id="employeeName" required>
+        </div>
+
+        <div class="section">
+            <h2>القسم 2: اختيار المندوب</h2>
+            <label for="agentSelect">اختر المندوب:</label>
+            <select id="agentSelect" required></select>
+        </div>
+
+        <div class="section">
+            <h2>القسم 3: اختيار العميل</h2>
+            <label for="customerSearch">ابحث عن العميل:</label>
+            <input type="text" id="customerSearch" placeholder="ابحث هنا..." autocomplete="off">
+            <select id="customerSelect" size="5" required></select>
+        </div>
+
+        <div class="section">
+            <h2>القسم 4: نوع العميل</h2>
+            <label for="customerTypeSelect">اختر نوع العميل:</label>
+            <select id="customerTypeSelect" required>
+                <option value="">-- اختر نوع العميل --</option>
+                <option value="غذائية">غذائية</option>
+                <option value="حلويات">حلويات</option>
+                <option value="تجميل">تجميل</option>
+                <option value="عام">عام</option>
+            </select>
+        </div>
+
+        <div class="section">
+            <h2>القسم 5: تقييم المنتجات</h2>
+            <div id="productsContainer">
+                </div>
+        </div>
+
+        <button id="submitBtn">إرسال البيانات</button>
+        <div id="responseMessage" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
